@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Safiie - Butterfly Puzzle</title>
+    <style>
+        /* PAGE LAYOUT - CSS GRID */
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "main"
+                "footer";
+            gap: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+        }
+
+        header {
+            grid-area: header;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* PUZZLE ASSEMBLY - FLEXBOX */
+        .puzzle-box {
+            grid-area: main;
+            display: flex;
+            flex-wrap: wrap; 
+            width: 410px; /* Width for 4 pieces (approx 100px each) */
+            margin: 0 auto;
+            border: 4px solid #333;
+            background: white;
+        }
+
+        .puzzle-box img {
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+
+        /* Hiding the faulty piece (Q) */
+        .faulty {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Puzzle Name: Butterflies</h1>
+        <p>Student: Safiie Devletshaieva</p>
+    </header>
+
+    <div class="puzzle-box">
+        <img src="images/puzzle1_A.jpg" alt="A">
+        <img src="images/puzzle1_B.jpg" alt="B">
+        <img src="images/puzzle1_C.jpg" alt="C">
+        <img src="images/puzzle1_D.jpg" alt="D">
+        <img src="images/puzzle1_E.jpg" alt="E">
+        <img src="images/puzzle1_F.jpg" alt="F">
+        <img src="images/puzzle1_G.jpg" alt="G">
+        <img src="images/puzzle1_H.jpg" alt="H">
+        <img src="images/puzzle1_I.jpg" alt="I">
+        <img src="images/puzzle1_J.jpg" alt="J">
+        <img src="images/puzzle1_K.jpg" alt="K">
+        <img src="images/puzzle1_L.jpg" alt="L">
+        <img src="images/puzzle1_M.jpg" alt="M">
+        <img src="images/puzzle1_N.jpg" alt="N">
+        <img src="images/puzzle1_O.jpg" alt="O">
+        <img src="images/puzzle1_P.jpg" alt="P">
+        
+        <img src="images/puzzle1_Q.jpg" class="faulty" alt="extra">
+    </div>
+
+    <footer>
+        <p>Date: April 13, 2026</p>
+    </footer>
+
+</body>
+</html>
